@@ -65,8 +65,24 @@
             <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Perspiciatis cum recusandae eum laboriosam voluptatem repudiandae odio, vel exercitationem officiis provident minima. </p>
           </blockquote>
           <div class="d-flex" data-aos="fade-up" data-aos-delay="200">
-            <a href="#about" class="btn-get-started">Get Started</a>
-            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
+            <div class="card">
+              <div class="card-header">
+                 <strong>Drop your CV</strong>
+              </div>
+              <div class="card-body">
+                <form action="upload-db.php" method="post" enctype="multipart/form-data">
+                  <!--<input type="File" name="file" value="Upload CV">-->
+                  <div class="mb-3">
+                    <input class="form-control" type="File" name="file">
+                  </div>
+                  <input class="btn btn-primary center rounded my-3" type="submit" name="submit">
+                </form>
+              </div>
+            </div>
+
+           
+           <!--<a href="#about" class="btn-get-started">Get Started</a>
+            <a href="https://www.youtube.com/watch?v=LXb3EKWsInQ" class="glightbox btn-watch-video d-flex align-items-center"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>-->
           </div>
 
         </div>
